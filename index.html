@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mounika Reddy | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial, sans-serif;scroll-behavior:smooth;color:#222}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+box-shadow:0 2px 6px rgba(0,0,0,.1);
+z-index:100;
+}
+
+nav a{
+margin:0 10px;
+font-weight:bold;
+text-decoration:none;
+color:black;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(135deg,#667eea,#764ba2,#ff758c);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{font-size:50px}
+.hero span{color:#ffe066}
+
+/* BUTTON */
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:white;
+color:#764ba2;
+font-weight:bold;
+margin:8px;
+cursor:pointer;
+}
+
+/* SECTIONS */
+section{padding:70px 20px;text-align:center}
+
+/* ABOUT */
+#about{
+background:linear-gradient(135deg,#e0f2f1,#b2dfdb);
+color:#0f172a;
+}
+
+.about-content{
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+}
+
+#about h2{color:#0f766e;margin-bottom:20px}
+
+/* SKILLS */
+#skills{
+background:linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+.skills span{
+background:white;
+padding:12px 18px;
+margin:8px;
+border-radius:20px;
+display:inline-block;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+/* PROJECTS */
+#projects{
+background:linear-gradient(135deg,#eef2ff,#e0e7ff);
+color:#1e293b;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.project-card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 6px 15px rgba(0,0,0,.12);
+}
+
+/* GALLERY */
+#gallery{
+background:linear-gradient(135deg,#f8fafc,#e2e8f0);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+max-width:900px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+height:200px;
+border-radius:15px;
+object-fit:cover;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.gallery img:hover{transform:scale(1.05)}
+
+/* CONTACT */
+#contact{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.contact-box{
+background:white;
+color:#111;
+max-width:500px;
+margin:auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+#contact a{
+color:#2563eb;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{background:#111;color:white;padding:15px}
+
+/* MOBILE */
+@media(max-width:600px){
+.hero h1{font-size:32px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Mounika Reddy</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Hi, I'm <span>Mounika Reddy</span></h1>
+<p id="typing"></p>
+
+<button onclick="downloadResume()">Download Resume</button>
+<button onclick="window.open('https://www.linkedin.com/in/mounika-reddy-lekkala-aaab79259/')">LinkedIn</button>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="about-content">
+<p>
+I am a highly motivated <b>Data Science student</b> with a strong passion for
+<b>Frontend Development</b> and <b>intelligent systems</b>. I enjoy transforming
+complex ideas into simple, user-friendly digital experiences.
+</p>
+<br>
+<p>
+My interests lie at the intersection of <b>data, design, and technology</b>.
+I have hands-on experience working with Python, Power BI, and modern web
+technologies, and I continuously enhance my skills through projects and
+self-learning.
+</p>
+<br>
+<p>
+I am eager to contribute to innovative teams, learn from real-world challenges,
+and grow into a professional who delivers <b>impactful, data-driven solutions</b>.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span>Python</span>
+<span>Java</span>
+<span>SQL</span>
+<span>Power BI</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+
+<div class="project-card">
+<h3>AI Resume Screening System</h3>
+<p>ML based resume filtering and matching system.</p>
+</div>
+
+<div class="project-card">
+<h3>Spotify Data Analysis</h3>
+<p>Music trend visualization using Python & Power BI.</p>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+
+<img src="https://work.icredify.com/img/gpcet_Logo.JPG" alt="GPCET College">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Coding">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Power BI">
+<img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" alt="Education">
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact-box">
+<p>📧 <a href="mailto:mounikalekkala525@gmail.com">mounikalekkala525@gmail.com</a></p>
+<p>🔗 <a href="https://www.linkedin.com/in/mounika-reddy-lekkala-aaab79259/" target="_blank">LinkedIn Profile</a></p>
+</div>
+</section>
+
+<footer>© 2026 Mounika Reddy</footer>
+
+<script>
+const text="Frontend & Data Science Intern | UI Developer";
+let i=0;
+function type(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(type,70);
+}}
+type();
+
+function downloadResume(){
+window.open("https://drive.google.com/uc?export=download&id=1XNz7vr6jjrvURIeAHKZ5TUf5lQVcoy3c");
+}
+
+document.querySelectorAll(".gallery img").forEach(img=>{
+img.onclick=()=>window.open(img.src);
+});
+</script>
+
+</body>
+</html>
